@@ -1,3 +1,3 @@
-# Cat 
+# Uttils in C 
 
-Own implementation of cat program that show the file content
+Own implementation of C uttils such as: cat (program that show the file content)
