@@ -1,3 +1,3 @@
-# Uttils in C 
+# Libc 
 
-Own implementation of C uttils such as: cat (program that show the file content)
+Own implementation of standart C library
