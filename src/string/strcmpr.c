@@ -1,8 +1,8 @@
-int my_strcmpr(char *a, char *b) {
-  if(my_strlen(a) != my_strlen(b)) return -1;
-  for(int i = 0; i < my_strlen(a); i++) {
-    if(a[i] != b[i]) return -1;
-  }
+int my_strcmpr(const char *a, const char *b) {
+  char *a1 = a;
+  char *b1 = b;
   
-  return 1;
+  while(*a1 && (*a1++ == *b1++)) a1++; b1++;
+  
+  return *a1 - *b1;
 }
