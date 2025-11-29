@@ -1,7 +1,5 @@
-#include<stdio.h>
-
-char *my_strcpy(char *dest, const char *src) {
-  char *d = dest;
+unsigned char *my_strcpy(unsigned char *dest, const unsigned char *src) {
+  unsigned char *d = dest;
 
   while((*d++ = *src++));
 

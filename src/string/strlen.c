@@ -1,9 +1,7 @@
-#include<stdio.h>
-
-size_t my_strlen(char *str) {
-  const char *s = str;
+size_t my_strlen(const unsigned char *str) {
+  const unsigned char *s = str;
   
   while(*s) s++;
 
-  return s - str;
+  return (size_t)(s - str);
 }
