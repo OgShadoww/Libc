@@ -2,7 +2,10 @@
 .align 2
 
 _sys_read:
-  mv X0, 
-  mv X16, #3
-  svc 0
+  // x0 = fd
+  // x1 = buff to save
+  // x2 = bytes to read
 
+  mov X16, #3
+  svc 0
+  ret
