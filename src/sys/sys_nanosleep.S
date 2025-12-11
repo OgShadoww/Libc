@@ -5,7 +5,7 @@ _sys_nanosleep:
   stp x29, x30, [sp, -48]!
   mov x29, sp
   
-  str x4, [sp, 16]
+  str x0, [sp, 16]
 
   mov x0, #0          
   mov x1, #0              
