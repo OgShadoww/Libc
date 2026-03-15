@@ -1,8 +1,9 @@
-#include<ogc/stddef.h>
+#include <ogc/string.h>
 
-char *my_memcpy(char *dest, const unsigned char *source, size_t n) {
-  char *a = dest;
+char *ogc_memcpy(void *dest, const void *source, size_t n) {
+  unsigned char *d = dest;
+  const unsigned char *s = source;
   
-  while(n--) *a++ = *source++;
+  while(n--) *d++ = *s++;
   return dest;
 }

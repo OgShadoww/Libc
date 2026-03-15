@@ -1,7 +1,7 @@
-#include<ogc/stddef.h>
+#include<ogc/string.h>
 
-size_t my_strlen(const unsigned char *str) {
-  const unsigned char *s = str;
+size_t ogc_strlen(const char *str) {
+  const char *s = str;
   
   while(*s) s++;
 
