@@ -1,4 +1,22 @@
-cat
-a.out
-main
-main.c
+# build artifacts
+obj/
+build/
+bin/
+
+# libraries / executables
+*.o
+*.a
+*.so
+*.dylib
+*.out
+ogc
+
+# debug files
+*.dSYM/
+*.log
+
+# macOS
+.DS_Store
+
+# clangd / compilation db if you don't want to commit it
+compile_commands.json
