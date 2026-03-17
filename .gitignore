@@ -18,5 +18,6 @@ ogc
 # macOS
 .DS_Store
 
-# clangd / compilation db if you don't want to commit it
+# clangd
 compile_commands.json
+.cache
