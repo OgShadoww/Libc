@@ -8,4 +8,9 @@ _sys_open:
 
   mov X16, #5
   svc 0
+  b.cs error
+  ret
+
+error:
+  mov x0, #-1
   ret

@@ -1,4 +1,4 @@
-.globl _sys_read
+.global _sys_read
 .align 2
 
 _sys_read:
@@ -8,4 +8,9 @@ _sys_read:
 
   mov X16, #3
   svc 0
+  b.cs error
+  ret
+
+error:
+  mov x0, #-1
   ret
